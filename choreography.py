@@ -1,11 +1,9 @@
 import jax.numpy as jnp
-np = jnp
 from jax import grad, jit, vmap
 from jax import random
 import jax
 import matplotlib.pyplot as plt
 key = jax.random.PRNGKey(0)  # key to make sure everything is repetible
-import numpy as np
 import numpy as np
 from jax import value_and_grad
 from matplotlib.pyplot import figure
