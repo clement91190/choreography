@@ -91,7 +91,7 @@ class Choreography():
                 yj = jnp.roll(y, roll_val * j)
             
                 rij = jnp.sqrt((xi - xj) ** 2 + (yi - yj) ** 2)
-                L += 1. / rij
+                L += 1. / (rij ** self.potential / 2.)
         
         # K 
         vx, vy = self.dtraj(w, t)
